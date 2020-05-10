@@ -7,7 +7,7 @@ Les utilisateurs du réseau sont les pairs, qui communiquent avec les autres via
 J'ai été inspiré par des lectures d'articles expliquant en détail le fonctionnement de réseaux type réseaux locaux/internet, et j'ai voulu simuler le fonctionnement d'un réseau. Pour cela, j'ai du bien sûr adapter et simplifier un peu les protocoles existants.
 
 # Cheminement
-Pour commencer, j'ai créé des premières structures de base, celles de pair, de paquet, de socket et de DNS. Puis je leur ai rajouté des méthodes permettant d'interragir.
+Pour commencer, j'ai créé des premières structures de base, celles de pair, de paquet, de socket et de DNS. Puis je leur ai rajouté des méthodes permettant d'interagir.
 
 Par exemple, l'envoi d'un paquet se passe de cette façon :
 * Le programme qui doit envoyer un paquet l'ajoute à la file de paquets à envoyer du pair P_1 auquel il est rattaché
@@ -18,4 +18,4 @@ Par exemple, l'envoi d'un paquet se passe de cette façon :
 * Le socket décompose le paquet et ajoute ses données dans la file des paquets reçus de P_2. Ce données peuvent alors être utilisées par le programme rattaché à P_2 à qui il est adressé.
 
 # Pistes pour la suite
-Je pense qu'il serait une bonne idée d'ajouter la possibiltié que les paquets voyagent entre les pairs comme sur un graphe, c'est-à-dire qu'il n'aillent pas directement de l'expéditeur au destinataire mais qu'il soient relayés par d'autres pairs.
+Je pense qu'il serait une bonne idée d'ajouter la possibilté que les paquets voyagent entre les pairs comme sur un graphe, c'est-à-dire qu'il n'aillent pas directement de l'expéditeur au destinataire mais qu'il soient relayés par d'autres pairs.
